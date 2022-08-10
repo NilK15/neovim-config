@@ -1,8 +1,3 @@
-call plug#begin()
-Plug 'vim-airline/vim-airline'
-call plug#end()
-
-
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
