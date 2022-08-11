@@ -142,7 +142,7 @@ cmp.setup({
 			{ name = 'path' },
 			-- { name = 'buffer' },
 			-- This helps stop polluting the list with ../..\blahblah nonsense
-			-- { name = 'cmdline', keyword_pattern = [[\!\@<!\w*]] },
+			{ name = 'cmdline', keyword_pattern = [[\!\@<!\w*]] },
 		}),
 		-- Shows entries horizontally instead of vertically
 		-- view = {

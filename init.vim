@@ -1,10 +1,20 @@
-" ============================ Vim-Plugins ==============================
+" ==================== Vim-Plugins ======================================
 
 call plug#begin()
 "This script contains all vim-plugins
 source ~/AppData/Local/nvim/nvimSettings/plugins.vim
 
 call plug#end()
+
+
+" ==================== Colors and Themes ================================
+
+"This script contains general neosolarized color settings
+source ~/AppData/Local/nvim/colors/NeoSolarized-Custom.vim
+
+"This script sets Neovim to use true color
+source ~/AppData/Local/nvim/nvimSettings/true-color.vim
+
 
 " ==================== Neovim and Plugin Setting ========================
 
@@ -28,6 +38,8 @@ source ~/AppData/Local/nvim/nvimSettings/vim-nerdtree-syntax-highlight.vim
 
 "This script contains vim-commentary settings
 source ~/AppData/Local/nvim/nvimSettings/vim-commentary.vim
+
+
 
 
 " ==================== LSP Source ======================================

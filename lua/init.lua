@@ -7,3 +7,4 @@ end
 require("luaSettings.lsp")
 require("luaSettings.cmp")
 require("luaSettings.lspsaga")
+require("luaSettings.treesitter")

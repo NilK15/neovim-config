@@ -13,9 +13,18 @@ Plug 'ryanoasis/vim-devicons'
 " Comment code (type gcc in Normal mode)
 Plug 'tpope/vim-commentary'
 
+" Better Syntax
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+
+
+"======================== Color/Themes =====================
+
+"NeoSolarized theme
+Plug 'overcache/NeoSolarized'
+
 "Display CSS color for color values
 Plug 'ap/vim-css-color'
-
 
 
 "======================== LSP Related ======================
