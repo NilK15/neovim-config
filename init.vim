@@ -1,9 +1,9 @@
 " ============================ Vim-Plugins ==============================
+
 call plug#begin()
 "This script contains all vim-plugins
-source ~/AppData/Local/nvim/nvimSettings/vim-plugins.vim
+source ~/AppData/Local/nvim/nvimSettings/plugins.vim
 call plug#end()
-
 
 
 
@@ -31,6 +31,13 @@ source ~/AppData/Local/nvim/nvimSettings/vim-nerdtree-syntax-highlight.vim
 "This script contains vim-commentary settings
 source ~/AppData/Local/nvim/nvimSettings/vim-commentary.vim
 
+
+
+
+" ==================== LSP Source ======================================
+
+"This sources the lua script to run all remaining nested lua scripts 
+lua require('init')
 
 
 
