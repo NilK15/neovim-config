@@ -129,7 +129,6 @@ cmp.setup.cmdline(':', {
 	-- mapping = cmp.mapping.preset.cmdline(),
 	sources = cmp.config.sources({
 		{ name = 'path' },
-		{ name = 'cmdline' },
 	}),
 	formatting = {
 		format = function(entry, vim_item)
@@ -137,7 +136,6 @@ cmp.setup.cmdline(':', {
 			vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
 			-- Source
 			vim_item.menu = ({
-				cmdline = "[Cmd]",
 			})[entry.source.name]
 			return vim_item
 		end

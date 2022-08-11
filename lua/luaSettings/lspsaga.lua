@@ -9,7 +9,7 @@ local saga = require 'lspsaga'
 ---- use custom config
 saga.init_lsp_saga({
 	-- put modified options in there
-	border_style = "rounded",
+	-- border_style = "rounded",
 	move_in_saga = { prev = '<C-p>', next = '<C-n>' },
 })
 
