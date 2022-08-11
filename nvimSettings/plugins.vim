@@ -23,13 +23,23 @@ Plug 'ap/vim-css-color'
 "Native LSP wrapper for LSP configuration
 Plug 'neovim/nvim-lspconfig'
 
-"Autocomplete for LSP
-Plug 'hrsh7th/nvim-cmp'				               
+"Autocomplete engine
+Plug 'hrsh7th/nvim-cmp'
+
+"Autocomplete sources to feed the autocomplete engine (nvim-cmp)
+Plug 'hrsh7th/cmp-nvim-lsp' "For LSP completion
+Plug 'hrsh7th/cmp-buffer'   "For text in the current buffer of Neovim
+Plug 'hrsh7th/cmp-path'     "For pathing completion
+Plug 'hrsh7th/cmp-cmdline'  "For command line completion
+
+"Snippet engine to handle snippets
+Plug 'L3MON4D3/LuaSnip'
+
+"LSP Saga provides prebuilt, good looking implementations of LSP functions
+"such as hoverdocs, diagnostics, etc
+Plug 'glepnir/lspsaga.nvim'
 
 "Helper for jdtls, eclipse featured language server
 Plug 'mfussenegger/nvim-jdtls'
 
-" Plug 'hrsh7th/cmp-buffer'				               
-" Plug 'hrsh7th/cmp-path'					
-" Plug 'hrsh7th/cmp-cmdline'
 

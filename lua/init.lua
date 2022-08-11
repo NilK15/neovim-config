@@ -5,3 +5,5 @@ end
 
 -- This will run init.lua in the lsp folder
 require("luaSettings.lsp")
+require("luaSettings.cmp")
+require("luaSettings.lspsaga")

@@ -3,10 +3,8 @@
 call plug#begin()
 "This script contains all vim-plugins
 source ~/AppData/Local/nvim/nvimSettings/plugins.vim
+
 call plug#end()
-
-
-
 
 " ==================== Neovim and Plugin Setting ========================
 
@@ -30,8 +28,6 @@ source ~/AppData/Local/nvim/nvimSettings/vim-nerdtree-syntax-highlight.vim
 
 "This script contains vim-commentary settings
 source ~/AppData/Local/nvim/nvimSettings/vim-commentary.vim
-
-
 
 
 " ==================== LSP Source ======================================
