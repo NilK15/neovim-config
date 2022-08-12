@@ -44,6 +44,12 @@ Plug 'hrsh7th/cmp-cmdline'  "For command line completion
 "Snippet engine to handle snippets
 Plug 'L3MON4D3/LuaSnip'
 
+"Collection of snippets to feed engine 
+Plug 'rafamadriz/friendly-snippets'
+
+"Completion feeder for LSP
+Plug 'saadparwaiz1/cmp_luasnip'
+
 "LSP Saga provides prebuilt, good looking implementations of LSP functions
 "such as hoverdocs, diagnostics, etc
 Plug 'glepnir/lspsaga.nvim'

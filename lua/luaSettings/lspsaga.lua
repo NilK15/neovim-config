@@ -4,14 +4,14 @@ local saga = require 'lspsaga'
 -- local kind = require('lspsaga.lspkind')
 -- kind[type_number][2] = icon -- see lua/lspsaga/lspkind.lua
 -- use default config
--- saga.init_lsp_saga()
+saga.init_lsp_saga()
 
 ---- use custom config
-saga.init_lsp_saga({
-	-- put modified options in there
-	-- border_style = "rounded",
-	move_in_saga = { prev = '<C-p>', next = '<C-n>' },
-})
+-- saga.init_lsp_saga({
+-- 	-- put modified options in there
+-- 	border_style = "rounded",
+-- 	move_in_saga = { prev = '<C-p>', next = '<C-n>' },
+-- })
 
 ---- Options with default value
 ---- "single" | "double" | "rounded" | "bold" | "plus"

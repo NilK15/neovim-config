@@ -1,5 +1,4 @@
-require("luasnip.loaders.from_vscode").lazy_load()
-
+require("luasnip/loaders/from_vscode").lazy_load()
 -- Function to help with Super Tab completion (use tab to complete and other functions)
 local has_words_before = function()
 	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -40,7 +39,7 @@ local luasnip = require("luasnip")
 local cmp = require 'cmp'
 cmp.setup({
 	-- sets the color scheme of completion window kind texts (icon and string after it)
-	vim.api.nvim_command [[autocmd ColorScheme * highlight CmpItemKind guifg=none guibg=#4a0444]],
+	-- vim.api.nvim_command [[autocmd ColorScheme * highlight CmpItemKind guifg=none guibg=#4a0444]],
 	completion = {
 		completeopt = 'menu, menuone,noselect,noinsert',
 	},
@@ -124,19 +123,6 @@ cmp.setup({
 	cmp.setup.cmdline(':', {
 		-- mapping = cmp.mapping.preset.cmdline(),
 		mapping = cmp.mapping.preset.cmdline {
-			-- ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-			-- ['<Cr>'] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.ConfirmBehavior.Replace }), { 'i', 'c' }),
-			-- ["<C-Space>"] = cmp.mapping(function(fallback)
-			-- 	if cmp.visible() then
-			-- 		cmp.select_next_item()
-			-- 	elseif luasnip.expand_or_jumpable() then
-			-- 		luasnip.expand_or_jump()
-			-- 	elseif has_words_before() then
-			-- 		cmp.complete()
-			-- 	else
-			-- 		fallback()
-			-- 	end
-			-- end, { "i", "s" }),
 		},
 		sources = cmp.config.sources({
 			{ name = 'path' },
@@ -151,7 +137,7 @@ cmp.setup({
 		formatting = {
 			format = function(entry, vim_item)
 				-- Kind icons
-				vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+				vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
 				-- Source
 				vim_item.menu = ({
 					path = "[Path]",
@@ -176,7 +162,7 @@ cmp.setup({
 		formatting = {
 			format = function(entry, vim_item)
 				-- Kind icons
-				vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+				vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
 				-- Source
 				vim_item.menu = ({
 					buffer = "[Buffer]",

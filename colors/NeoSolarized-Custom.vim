@@ -32,5 +32,5 @@ let g:neosolarized_termBoldAsBright = 1
 colorscheme NeoSolarized
 
 :hi Normal guibg=none
-:hi Normal guibg=none
+:hi LinNr guibg=none
 
