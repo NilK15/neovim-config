@@ -34,6 +34,6 @@ set pumblend=5
 
 set background=dark
 
-colorscheme NeoSolarized
+" colorscheme NeoSolarized
 
 :hi CmpItemKindDefault guifg=none

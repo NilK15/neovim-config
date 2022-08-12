@@ -13,7 +13,7 @@ call plug#end()
 source ~/AppData/Local/nvim/nvimSettings/colorSettings/neosolarized.vim
 
 "This script contains general one-dark color settings
-" source ~/AppData/Local/nvim/colors/onedark-Custom.vim
+source ~/AppData/Local/nvim/nvimSettings/colorSettings/onedark.lua
 
 "This script sets Neovim to use true color
 source ~/AppData/Local/nvim/nvimSettings/true-color.vim
