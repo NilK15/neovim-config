@@ -10,7 +10,10 @@ call plug#end()
 " ==================== Colors and Themes ================================
 
 "This script contains general neosolarized color settings
-source ~/AppData/Local/nvim/colors/NeoSolarized-Custom.vim
+source ~/AppData/Local/nvim/nvimSettings/colorSettings/neosolarized.vim
+
+"This script contains general one-dark color settings
+" source ~/AppData/Local/nvim/colors/onedark-Custom.vim
 
 "This script sets Neovim to use true color
 source ~/AppData/Local/nvim/nvimSettings/true-color.vim

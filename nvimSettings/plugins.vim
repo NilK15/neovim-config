@@ -23,6 +23,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "NeoSolarized theme
 Plug 'overcache/NeoSolarized'
 
+"One-Dark Theme
+Plug 'navarasu/onedark.nvim'
+
 "Display CSS color for color values
 Plug 'ap/vim-css-color'
 

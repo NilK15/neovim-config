@@ -4,7 +4,6 @@ local has_words_before = function()
 	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
 	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
-
 -- Icons for completion window
 local kind_icons = {
 	Text = "",
@@ -33,7 +32,6 @@ local kind_icons = {
 	Operator = "",
 	TypeParameter = ""
 }
-
 -- Setup nvim-cmps.
 local luasnip = require("luasnip")
 local cmp = require 'cmp'
@@ -41,7 +39,7 @@ cmp.setup({
 	-- sets the color scheme of completion window kind texts (icon and string after it)
 	-- vim.api.nvim_command [[autocmd ColorScheme * highlight CmpItemKind guifg=none guibg=#4a0444]],
 	completion = {
-		completeopt = 'menu, menuone,noselect,noinsert',
+		-- completeopt = 'menu, menuone,noselect,noinsert',
 	},
 	formatting = {
 		format = function(entry, vim_item)
@@ -61,9 +59,6 @@ cmp.setup({
 	snippet = {
 		expand = function(args)
 			require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-			-- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-			-- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-			-- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
 		end,
 	},
 	-- set the border and color of the window to show completion information
